@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<robot name="wall1_beta.urdf">
+<robot name="wall1_beta">
   <link name="baseLink">
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
