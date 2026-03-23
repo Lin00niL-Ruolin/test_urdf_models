@@ -1,10 +1,19 @@
 <?xml version="1.0" ?>
 <robot name="wall1_beta">
+  <!-- 必须显式定义world link -->
+  <link name="world">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+
   <link name="baseLink">
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
-      <mass value="0.0"/>
-      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+      <mass value="500.0"/>
+      <inertia ixx="376.666667" ixy="0" ixz="0" iyy="541.666667" iyz="0" izz="168.333333"/>
     </inertial>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -22,8 +31,7 @@
       </geometry>
     </collision>
   </link>
-  
-  <!-- 添加固定关节，将墙面固定在世界坐标系 -->
+
   <joint name="fixed_joint" type="fixed">
     <parent link="world"/>
     <child link="baseLink"/>
