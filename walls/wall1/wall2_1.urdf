@@ -18,9 +18,9 @@
     <collision concave="yes">
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="wall2_1.obj" scale="1.0 1.0 1.0"/>
+        
         <!-- You could also specify the collision (for the wall2_1) with a "box" tag: -->
-        <!-- <box size=".06 .06 .06"/> -->
+        <box size="0.1 0.06 0.01"/>
       </geometry>
     </collision>
   </link>
