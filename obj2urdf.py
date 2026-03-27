@@ -68,7 +68,7 @@ def write_urdf_text():
        <color rgba="1 1 1 1"/>
      </material>
     </visual>
-    <collision>
+    <collision concave="yes">
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="{}.obj" scale="1.0 1.0 1.0"/>
