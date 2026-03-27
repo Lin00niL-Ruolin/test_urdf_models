@@ -22,6 +22,10 @@
         <!-- You could also specify the collision (for the floor1_too) with a "box" tag: -->
         <!-- <box size=".06 .06 .06"/> -->
       </geometry>
+      <contact>
+        <rolling_friction>0.0</rolling_friction>
+        <spinning_friction>0.0</spinning_friction>
+      </contact>
     </collision>
   </link>
 </robot>
